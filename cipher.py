@@ -1,6 +1,6 @@
 # add your code here
 def take_input():
-    sentence_to_encrypt = input("Please enter the sentence you would like to encrypt:").lower()
+    sentence_to_encrypt = input("Please enter a senctence::").lower()
     return sentence_to_encrypt
     pass
 
@@ -25,5 +25,5 @@ def cipher(word):
 def main():
     word = take_input()
     cipher(word)
-    print("The encrypted phrase is:"," ", cipher(word))
+    print("The encrypted sentence is:"," ", cipher(word))
 main()
