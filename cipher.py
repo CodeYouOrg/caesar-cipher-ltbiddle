@@ -2,12 +2,9 @@
 def take_input():
     sentence_to_encrypt = input("Please enter a senctence::").lower()
     return sentence_to_encrypt
-    pass
-
-
 def cipher(word):
     alphabet = ("abcdefghijklmnopqrstuvwxyz")
-    encrypted_phrase = " "
+    encrypted_phrase = ""
     shift = 5
     for char in word:
         if char in alphabet:
@@ -25,5 +22,7 @@ def cipher(word):
 def main():
     word = take_input()
     cipher(word)
-    print("The encrypted sentence is:"," ", cipher(word))
+    print("The encrypted sentence is:",cipher(word))
+
+
 main()
